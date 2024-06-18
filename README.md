@@ -1,3 +1,4 @@
+[![crates.io](https://img.shields.io/crates/v/nct3933.svg)](https://crates.io/crates/nct3933)
 # Rust driver for 3-Channel Sink/Source Current DAC NCT3933U
 
 > This is a platform agnostic Rust driver for the NCT3933, based on the [`embedded-hal`](https://github.com/japaric/embedded-hal) traits.
