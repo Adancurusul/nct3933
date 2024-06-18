@@ -16,7 +16,8 @@ saving function to reduce 60% power consumption when system enters standby mode.
 ## Usage
 using STM32G031G8Ux
 
-```#![no_std]
+```rust
+#![no_std]
 #![no_main]
 
 #![allow(dead_code)]
