@@ -1,6 +1,6 @@
 [package]
 name = "nct3933"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Adancurusul <1016867898@qq.com>"]
 description = "Platform agnostic rust driver for Nuvoton 3-Channel Sink/Source Current DAC NCT3933U."
