@@ -53,7 +53,7 @@
 //!         Default::default(),
 //!     );
 //!     
-//!     let mut nct3933 = NCT3933::new(i2c, 0x2A).unwrap();
+//!     let mut nct3933 = NCT3933::new(i2c, 0x2A >> 1).unwrap();
 //! 
 //!    
 //!     match nct3933.check_id() {

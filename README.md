@@ -53,7 +53,7 @@ async fn main(_spawner: embassy_executor::Spawner) {
         Default::default(),
     );
 
-    let mut nct3933 = NCT3933::new(i2c, 0x2A).unwrap();
+    let mut nct3933 = NCT3933::new(i2c, 0x2A >> 1).unwrap();// important to shift the address by 1 !! nct3933 feature
 
     
     match nct3933.check_id() {
