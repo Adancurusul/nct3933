@@ -53,7 +53,7 @@
 //!         Default::default(),
 //!     );
 //!     
-//!     let mut nct3933 = NCT3933::new(i2c, 0x2A >> 1).unwrap();
+//!     let mut nct3933 = NCT3933::new(i2c, 0x2A ).unwrap();
 //! 
 //!    
 //!     match nct3933.check_id() {
@@ -122,11 +122,10 @@ where
     I2C: i2c::I2c<Error = E>,
     //D: DelayMs<u8>,
 {
-    ///Initialize the NCT3933
     pub fn new(i2c: I2C, address: u8) -> Result<Self, E> {
         let nct3933 = NCT3933 {
             i2c,
-            address,
+            address : address >> 1,//feature of nct2933 i2c address  0x2A >> 1 = 0x15
         };
         Ok(nct3933)
     }
