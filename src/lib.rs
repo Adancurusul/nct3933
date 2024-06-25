@@ -16,7 +16,10 @@
 //! The following are ways to use the library
 //! ### Synchronous version
 //! using STM32G031G8Ux
-
+//! add the following to your Cargo.toml    
+//! ```nct3933 = {version = "0.2.0" , features = ["sync"]}```
+//! 
+//! 
 //! ```rust
 //! #![no_std]
 //! #![no_main]
@@ -76,9 +79,12 @@
 //! }
 //!
 //! ```
+//! 
 //! ### Asynchronous version
 //! using STM32G031G8Ux
-//!
+//! add the following to your Cargo.toml     
+//! ```nct3933 = {version = "0.2.0" , features = ["async"]}```
+//! 
 //! ```rust
 //! #![no_std]
 //! #![no_main]
