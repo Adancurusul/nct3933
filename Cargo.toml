@@ -6,7 +6,7 @@ authors = ["Adancurusul <1016867898@qq.com>"]
 description = "Platform agnostic rust driver for Nuvoton 3-Channel Sink/Source Current DAC NCT3933U."
 readme = "README.md"
 license = "MIT OR Apache-2.0"
-keywords = ["dac", "driver","async", "embedded-hal","embedded-hal-async","embedded-hal-driver"]
+keywords = ["dac", "driver","async", "embedded-hal","embedded-hal-driver"]
 repository = "https://github.com/Adancurusul/nct3933"
 
 [dependencies]
